@@ -1,0 +1,44 @@
+[class*="row"]{
+	
+	font: center;
+}
+body, p, legend, label, input{
+	font: normal 20pt verdana, helvetica, sans-serif;
+	
+}
+body{
+	
+  background-image: -o-linear-gradient();
+  background-size: cover;
+	background-image: url("images/banhmy1.jpg");
+}
+fieldset{
+	padding: 10px;
+	
+}
+legend{
+	font-weight: bold;
+	color: white;
+}
+form label{
+	float: left;
+	width: 200px;
+	margin: 3px 0px 0px 0px;
+	font-size: 12px;
+}
+form input{
+	margin: 3px 3px 0px 0px;
+	border: 1px blue solid;
+}
+form input.sansLabel{
+	margin-left: 200px;
+}
+form .requis{
+	color: red;
+}
+form .error{
+	color: red;
+}
+form .succesful{
+	color: green;
+}

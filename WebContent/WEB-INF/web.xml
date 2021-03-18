@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+<jsp-config>
+		<jsp-property-group>
+			<url-pattern>*.jsp</url-pattern>
+			<include-prelude>/WEB-INF/taglibs.jsp</include-prelude>
+		</jsp-property-group>
+	</jsp-config>
+
+<servlet>
+<servlet-name>MenuController</servlet-name>
+<servlet-class>com.delibanhmi.controller.MenuController</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>MenuController</servlet-name>
+<url-pattern>/menu</url-pattern>
+</servlet-mapping>
+<servlet>
+<servlet-name>LoginControlleur</servlet-name>
+<servlet-class>com.delibanhmi.controller.LoginControlleur</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>LoginControlleur</servlet-name>
+<url-pattern>/login</url-pattern>
+</servlet-mapping>
+
+<servlet>
+<servlet-name>InscriptionControlleur</servlet-name>
+<servlet-class>com.delibanhmi.controller.InscriptionControlleur</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>InscriptionControlleur</servlet-name>
+<url-pattern>/inscription</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+<servlet-name>InscriptionControlleur</servlet-name>
+<url-pattern>/compteUser</url-pattern>
+</servlet-mapping>
+
+
+
+<servlet>
+<servlet-name>AdminControlleur</servlet-name>
+<servlet-class>com.delibanhmi.controller.AdminControlleur</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>AdminControlleur</servlet-name>
+<url-pattern>/admin</url-pattern>
+</servlet-mapping>
+
+<servlet>
+<servlet-name>SupprimeMenuControlleur</servlet-name>
+<servlet-class>com.delibanhmi.controller.SupprimeMenuControlleur</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>SupprimeMenuControlleur</servlet-name>
+<url-pattern>/supprimeMenu</url-pattern>
+</servlet-mapping>
+
+</web-app>  
